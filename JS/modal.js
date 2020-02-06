@@ -9,5 +9,5 @@ $(window).on('load', function() {
 
 
   $(".close-btn").on("click", function() {
-    document.location.href="cv.html";
+    document.location.href="index.html";
   })
