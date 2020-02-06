@@ -1,0 +1,176 @@
+@import "compass/css3";
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,500,300,700,400);
+
+@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+  font-family: 'Quicksand-Light';
+  src: url('Quicksand-Light.otf');
+  src: url('Quicksand-Light.otf') format('embedded-opentype'),
+}
+
+@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+  font-family: 'Quicksand-Regular';
+  src: url('Quicksand-Regular.otf');
+  src: url('Quicksand-Regular.otf') format('embedded-opentype'),
+}
+
+body{
+  display: table;
+  width: 100%;
+  background: #dedede;
+  text-align: center;
+}
+
+*{ 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+h1 {
+    font-family: 'Quicksand-Regular';
+    font-size: 22px;
+}
+h2 /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    font-family: 'Quicksand-Light';
+    font-size: 18px;
+}
+
+p {
+    font-size : 16px
+}
+
+header h1 {
+  text-align: center;   
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  header {
+      margin: auto;
+      width: 300px;
+      height: auto;
+      background-color: rgb(33, 236, 219);
+      border-radius: 20px;
+      border: solid white;
+      margin-bottom: 80px;
+  
+  }
+  
+  .bloc-image {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.26);
+    background-color: rgb(33, 236, 219);
+    margin: auto;
+    
+  }
+
+  .bloc-image img{
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.26);
+    width: 350px;
+  }
+
+  hr {
+    margin-top: 100px;
+  }
+.aa_h2{
+  font:100 5rem/1 Roboto;
+  text-transform: uppercase;
+}
+table{
+   background: #fff;
+}
+table,thead,tbody,tr, td,th{
+  text-align: center;
+  margin: auto;
+  border:1px solid #dedede;
+  padding: 1rem;
+  width: 50%;
+}
+.table    { display: table; width: 50%; }
+.tr       { display: table-row;  }
+.thead    { display: table-header-group }
+.tbody    { display: table-row-group }
+.tfoot    { display: table-footer-group }
+.col      { display: table-column }
+.colgroup { display: table-column-group }
+.td, .th   { display: table-cell; width: 50%; }
+.caption  { display: table-caption }
+
+.table,
+.thead,
+.tbody,
+.tfoot,
+.tr,
+.td,
+.th{
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+}
+.table{
+  background: #fff;
+  margin: auto;
+  border:none;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+
+.th{
+  font-weight: 700;
+  border:1px solid #dedede;
+
+}
+.td{
+  font-weight: 300;
+  border:1px solid #dedede;
+  border-top:none;
+  
+}
+
+.aa_htmlTable{
+  
+  padding: 5rem;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  vertical-align: middle;
+}
+
+.aa_ahmadawais{
+  display: table;
+  width: 100%;
+  font: 100 1.2rem/2 Roboto;
+  margin: 5rem auto;
+}
+ 
+ /**Emoji Selection**/
+
+#Sad{
+  font-size: 50px;
+}
+
+#Happy{
+  font-size: 50px;
+}
+
+#Angry{
+  font-size: 50px;
+}
+
+footer, footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: cyan;
+}

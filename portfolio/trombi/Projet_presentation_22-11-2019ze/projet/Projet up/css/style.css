@@ -1,0 +1,343 @@
+@font-face {
+    /* Définition d'une nouvelle police nommée CAC Champagne */
+    font-family: 'Quicksand-Light';
+    src: url('Quicksand-Light.otf');
+    src: url('Quicksand-Light.otf') format('embedded-opentype'),
+}
+
+@font-face {
+    /* Définition d'une nouvelle police nommée CAC Champagne */
+    font-family: 'Quicksand-Regular';
+    src: url('Quicksand-Regular.otf');
+    src: url('Quicksand-Regular.otf') format('embedded-opentype'),
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+}
+
+/* scrool fluide quand le bouton "top" est clické */
+html {
+    scroll-behavior: smooth;
+    background: url(../images/background1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+    font-family: 'Quicksand-Regular';
+    font-size: 22px;
+}
+
+h2
+/* Utilisation de la police qu'on vient de définir sur les titres */
+
+{
+    font-family: 'Quicksand-Light';
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px
+}
+
+a {
+    text-decoration: none;
+}
+
+/* au survol du lien on éffectue une action d'opacité sur l'élément survolé*/
+a:hover {
+    opacity: 0.7;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header {
+    margin: auto;
+    width: 300px;
+    height: auto;
+    background-color: rgb(33, 236, 219);
+    border-radius: 20px;
+    border: solid white;
+}
+
+/* nav toggle */
+.nav-toggle {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  height: 2rem;
+  left: 2rem;
+  position: fixed;
+  top: 2rem;
+  width: 3.6rem;
+  z-index: 2; }
+  .nav-toggle:hover {
+    opacity: 0.8; }
+  .nav-toggle .nav-toggle-bar,
+  .nav-toggle .nav-toggle-bar::after,
+  .nav-toggle .nav-toggle-bar::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: white;
+    content: '';
+    height: 0.4rem;
+    width: 100%; }
+  .nav-toggle .nav-toggle-bar {
+    margin-top: 0; }
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.8rem; }
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.8rem; }
+  .nav-toggle.expanded .nav-toggle-bar {
+    background: transparent; }
+  .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+    background: white;
+    margin-top: 0; }
+  .nav-toggle.expanded .nav-toggle-bar::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .nav-toggle.expanded .nav-toggle-bar::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
+/* nav */
+.nav {
+    border: solid white;
+    cursor: pointer;
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  background: #28dde0;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 10vh;
+  margin-top: -20px;
+  left: -20rem;
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 20rem;
+  z-index: 1; 
+  border-bottom-right-radius: 20px;}
+  .nav.expanded {
+    left: 0; }
+  .nav ul {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+/*# sourceMappingURL=nav.css.map */
+
+
+/* modification de l'élément bouton graçe à son id ( le positionnement est centré graçe à sa margin auto 
+le design du bouton a une ombre grace au box-shadow*/
+#button-firstname {
+    width: 57.6px;
+    height: 55px;
+    background: url(../images/search.png);
+    box-shadow: 0px 0px 8px white;
+    font: bold 13px Arial;
+    border: solid white;
+    border-radius: 50%;
+    color: rgb(187, 184, 184);
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 200px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#button-firstname:hover {
+    opacity: 0.7;
+}
+#button-eval {
+
+    width: 400px;
+    height: 100px;
+    background-color: rgb(68, 70, 68);
+    box-shadow: 12px 10px 12px rgb(33, 236, 219);
+    font: bold 13px Arial;
+    color: rgb(187, 184, 184);
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+
+
+#button-eval:hover {
+    opacity: 0.7;
+}
+article {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.content-formateur {
+    text-align: center;
+    width: 250px;
+    background-color: rgb(33, 236, 219);
+    border-radius: 20px;
+    opacity: 1;
+    box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.26);
+}
+
+/*
+flex-wrap permet de faire descendre un bloc si celui-ci n'a plus la place pour s'afficher le resultat est
+visible en reduisant la page web
+ */
+
+.bloc-content-trombinoscope {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: auto;
+}
+
+.content-img {
+    margin: auto 0;
+    justify-content: center;
+    width: 250px;
+    margin-left: 20px;
+    background-color: rgb(33, 236, 219);
+    margin-bottom: 40px;
+    border-radius: 20px;
+    opacity: 1;
+    box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.26);
+}
+
+
+/* On applique le text align principalement dans les class sélélectionner*/
+.content-img h2,p {
+    text-align: center;
+}
+
+.img-trombinoscope {
+    padding: auto;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.26);
+}
+
+/* Utilisation de la police qu'on vient de définir sur les titres */
+.content-img:hover {
+    opacity: 0.6;
+}
+
+
+
+/* footer d'axel */
+
+.figureFooter {
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+	box-sizing: border-box;
+	border:1px solid white;
+	background-color: rgb(68, 70, 68);
+    margin: 1%;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+
+.figureFooter figcaption {
+    color: white;
+}
+
+#dev {
+    text-align: center;
+}
+
+#title {
+    flex: wrap;
+}
+
+
+footer img {
+    width: 100%;
+}
+
+footer figure {
+    padding: 5px;
+    width: 100%;
+}
+
+footer {
+    max-width: 100%;
+    background-color: rgb(33, 236, 219);
+    margin-top: 100px;
+    padding: 10px;
+    border: solid white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+figure {
+    width: 100%;
+}
+
+img {
+    border-radius: 50%;
+    border: solid grey;
+}
+
+/*Bouton pour revenir en haute de la page*/
+
+#myBtn {
+    display: none; /* Caché par défaut */
+    position: fixed; /* Position constante */
+    bottom: 20px; /* Place le bouton en bas de la page */
+    left: 18px; /* Place le bouton à la droite de la page */
+    z-index: 99; /* Pour être sûr qu'il n'y ait pas de chevauchement */
+    border: none; /* Enlève les bordures */
+    outline: none; /* Enlève les contours */
+    background-color: rgb(68, 70, 68);; /* Couleur du fond */
+    color: rgb(146, 145, 145); /* Couleur du texte */
+    cursor: pointer; /* Ajoute un pointeur quand on passe dessut */
+    padding: 15px; /* Du padding */
+    border-radius: 10px; /* Arrondir les bords */
+    font-size: 18px; /* Augmente la taille du fond */
+  }
+
+  /*Bouton avec souris dessus*/
+  #myBtn:hover {
+    background-color: rgb(226, 225, 225); /* Fond en passant la souris dessut */
+  }
