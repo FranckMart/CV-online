@@ -546,16 +546,13 @@ header {
     li {
         font-size: 1.6rem;
     }
-    #content-me {
-        flex-direction: column;
-    }
 
     #content-list {
         justify-content: space-around;
     }
 
     #image-content img {
-        width: 60%;
+        width: 100%;
         margin: auto;
         border-right: solid white 3px;
     }
