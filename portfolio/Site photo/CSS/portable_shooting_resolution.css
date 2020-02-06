@@ -1,0 +1,53 @@
+
+
+#contenu_tarif {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#tarif {
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    margin-top: 0;
+    
+}
+#tarif h1 {
+    text-align: center;
+    font-family: 'yellowtailregular', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tarif_minimal{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.tarif_eco{
+    width: 100%;
+    height: 120px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.tarif_premuim{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    
+}
+#photo {
+    margin-top: 20px;
+    margin: auto;
+    height: 400px;
+    width: 700px;
+    background-image: url("../photo/photo_shooting.JPG");
+    
+}
+

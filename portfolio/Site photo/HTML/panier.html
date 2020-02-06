@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+	
+		<meta charset="UTF-8"/> <!-- Encodage en UTF-8-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"/> <!-- FontAwesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/> <!-- Bootstrap -->
+		<link rel="icon" href="Nom du fichier favicon"/> <!-- Favicon -->
+		<link rel="stylesheet" href="../CSS/panier.css"/> <!-- CSS -->
+		<link rel="stylesheet" href="../CSS/panier_petite_resolution.css" media="all and (max-width: 1080px)">
+    <link rel="stylesheet" href="../CSS/panier_portable_resolution.css"
+        media="all and (min-width: 1081px) and (max-width: 1440px)">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- Responsive design -->
+		<meta name="theme-color" content="code couleur"/> <!-- Couleur navigateur Chrome Mobile -->
+
+  		<title>Panier</title>
+  		<meta name="description" content="Panier">
+  		
+	</head>
+	
+	<body>
+
+			<section id="header">
+			
+				<header>
+					<div id="titre">
+						<div id="contenu_gauche">
+							<div class="store">
+								<h3><a href="store.html" rel="follow">Store</a></h3>
+							</div>
+							<div class="contact">
+								<h3><a href="contact.html"  rel="follow">Contact</a></h3>
+							</div>
+						</div>
+		
+						<div class="titrephotographe">
+							<h1><a href="site_photo.html"  rel="follow">Francky Martinez <br> Photography</a></h1>
+							<a href="../HTML/connexion.html"><button id="btnConnexion">Connexion</button></a>
+						</div>
+		
+						<div id="contenu_droite">
+							<div class="histoire">
+								<h3><a href="histoire.html"  rel="follow">Mon Histoire</a></h3>
+							</div>
+							<div class="shooting">
+								<h3><a href="shooting.html"  rel="follow">Shooting Photo</a></h3>
+							</div>
+						</div>
+					</div>
+				</header>
+				<section>
+	<div class="container">
+		<p id="bvn">Connectez-vous afin de valider votre commande</p>
+		<table class="table table-striped">
+			<thead class="thead-dark">
+				<tr><th>Article</th><th>Prix</th><th>Quantité</th></tr>
+			</thead>
+				<tbody id="cart-tablebody"></tbody>
+		</table>
+	</div>
+	<div class="container">   
+		<p>Sous total : <span class="subtotal"></span>€</p>
+		<a title="Passer la commande" href="../HTML/site_photo.html"><button class="btn btn-success" id="confirm-command">Passer la commande</button></a>
+		<span class="btn btn-danger" id="returnindex"><a title="Annuler" href="../HTML/site_photo.html">Annuler</span></p>
+	</div>
+
+
+<!-- SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> <!-- Popper.js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- JavaScript -->
+<script src="../JS/connexion.js"></script>
+<script src="../JS/store.js"></script>
+
+</body>
+
+</html>

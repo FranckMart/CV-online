@@ -1,0 +1,21 @@
+
+.titrephotographe {
+   font-size: 26px;
+
+}
+
+#titre h3 {
+    
+    font-size: 15px;
+   
+}
+
+#contenu_gauche{
+    flex-direction: column;
+}
+#contenu_droite{
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
+}

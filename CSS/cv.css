@@ -1,0 +1,673 @@
+@font-face {
+    font-family: "Playfair";
+    src: url("../fonts/PlayfairDisplaySC-Italic.otf") format("woff2"), url("../fonts/PlayfairDisplaySC-Italic.otf") format("woff");
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg) no-repeat center center fixed; /* Photo by Ales Nesetril on Unsplash*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 62.5%;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 3rem;
+    color: #e7ab28;
+    text-shadow: 3px 2px 3px black;
+    font-family: "Playfair";
+}
+
+h3 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #e7ab28;
+    text-shadow: 3px 2px 3px black;
+    font-family: "Playfair";
+}
+
+h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: #e7ab28;
+    text-shadow: 3px 2px 3px black;
+    font-family: "Playfair";
+}
+
+p,
+li,
+span {
+    font-size: 1.8rem;
+    margin: auto 0;
+    color: rgb(228, 227, 226);
+    text-shadow: 3px 2px 3px black;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#name-header-content {
+    width: 30%;
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+}
+
+#dev-header-content {
+    text-align: center;
+    width: 40%;
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    
+}
+
+#reseaux-header-content {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+}
+
+#reseaux-header-content img,
+#reseaux-header-content a {
+    width: 33px;
+    height: 33px;
+    margin: 4%;
+}
+
+#content-me {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    height: auto;
+    display: flex;
+}
+
+#content-left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+#image-content {
+    width: 100%;
+    height: 100%;
+    animation: slideLeft 3s;
+   
+}
+
+
+#image-content img {
+    width: 100%;
+    height: 100%;
+    border-left: solid white 2px;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+}
+
+#contact {
+    width: auto;
+    height: 100%;
+    padding: 4%;
+    text-align: center;
+    margin: auto 0;
+    border-left: solid white 2px;
+    border-bottom: solid white 2px;
+    animation: slideBottom 3s;
+    transition: all 500ms ease-in;
+    transform: scale(1);
+    z-index: 1;
+}
+
+#content-right {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#maFormation-présentation {
+    padding: 4%;
+    animation: slideRight 3s;
+    border-right: solid white 2px;
+    border-left: solid white 2px;
+    border-top: solid white 2px;
+    text-align: center;
+}
+
+#maFormation-présentation {
+    transition: all 500ms ease-in;
+    transform: scale(1);
+    z-index: 1;
+}
+
+
+#content-competence {
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    border: solid white 2px;
+    animation: slideBottom 3s;
+    transition: all 500ms ease-in;
+    transform: scale(1);
+    z-index: 1;
+}
+
+
+#contact:hover,#maFormation-présentation:hover,#content-competence:hover{
+
+    border: none;
+    z-index: 100;
+    transition: all 500ms ease-in;
+    transform: scale(1.1);
+
+}
+
+#content-competence h3 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#content-competence li {
+    font-weight: bold;
+    list-style-image: url(../img/true-logo.png);
+}
+
+.competence-title {
+    text-align: center;
+    height: 5%;
+}
+
+#content-list {
+    animation: slideRight 5s;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    padding-top: 0;
+    height: auto;
+}
+
+#portfolio,
+#experience {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+}
+
+.title-experience,
+.title-portfolio {
+    border: solid white 2px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 2%;
+    margin-bottom: 10%;
+}
+
+#webside-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+
+.webside {
+    width: 50%;
+    height: auto;
+    margin-top: 10%;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+    opacity: 0.7;
+    margin-top: 0;
+    transition: 1s;
+}
+.titleWebside{
+   color: white;
+   text-shadow: 3px 2px 3px black;
+   padding: 1%;
+}
+.experience-content {
+    width: 100%;
+    height: auto;
+}
+
+.experienceMaylor,
+.experienceVente,
+.experienceCaf {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.content-img-experience {
+    width: 50%;
+    padding: 5px;
+    height: auto;
+}
+
+.content-img-experience img {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.content-right-experience {
+    width: 50%;
+    height: auto;
+    margin: auto;
+
+}
+
+.content-right-experience p {
+    text-align: center;
+}
+
+.content-right-experience ul {
+    padding-top: 5%;
+    margin: auto 0;
+}
+
+
+.experienceCaf .content-right-experience:nth-child(1) {
+    display: none;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    from {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#CanvasContent {
+    display: flex;
+    width: 100%;
+}
+
+#canvas {
+    width: 100%;
+    display: flex;
+}
+
+.webside:hover {
+    opacity: 1;
+    transform: scale(0.9) rotate(5deg);
+}
+
+.webside img,
+.webside a {
+    margin: auto;
+    width: 100%;
+    height: 330px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.webside:nth-child(2),
+.webside:nth-child(4),
+.webside:nth-child(6) {
+    align-self: flex-end;
+}
+
+.webside:nth-child(2):hover,
+.webside:nth-child(4):hover,
+.webside:nth-child(6):hover {
+    transform: scale(0.9) rotate(-5deg);
+}
+
+
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    #content-competence {
+        height: 55%;
+    }
+
+    #content-list {
+        animation: slideRight 5s;
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 5%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 240px) and (max-width: 900px) {
+
+    h1,
+    h2 {
+
+        font-size: 2rem;
+
+    }
+
+    h3 {
+
+        font-size: 1.6rem;
+
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    li,
+    span {
+        font-size: 1.4rem;
+    }
+
+    li {
+        font-size: 1.4rem;
+    }
+
+    .liste-stage li {
+        font-size: 1.2rem;
+    }
+
+    #content-me {
+        flex-direction: column;
+    }
+    #image-content {
+    
+        margin: auto;
+        display: flex;
+        
+    }
+    #image-content img {
+        width: 70%;
+        margin: auto;
+        border-right: solid white 3px;
+    }
+    #content-right,
+    #content-left {
+        width: 100%;
+    }
+
+    #contact {
+        border-left: none;
+
+    }
+
+    #content-list {
+        flex-wrap: nowrap;
+        padding-top: 5%;
+    }
+
+    #maFormation-présentation {
+        padding: 3%;
+    }
+
+    #reseaux-header-content {
+
+        padding: 5%;
+    }
+
+    #reseaux-header-content img,
+    #reseaux-header-content a {
+        width: 23px;
+        height: 23px;
+        padding: 1%;
+    }
+
+    .webside {
+        width: 100%;
+        opacity: 1;
+    }
+    
+
+    .webside img,
+    .webside a {
+
+        width: 80%;
+        margin: auto;
+        height: 215px;
+
+    }
+
+    .content-img-experience {
+        width: 50%;
+        padding: 5px;
+        height: 60%;
+        margin-top: 2.5%;
+    }
+
+    #contact {
+
+        padding: 3%;
+        margin-top: 2%;
+        border-bottom: none;
+    }
+
+    .content-img-experience {
+        width: 70%;
+        margin: auto;
+    }
+
+    .content-right-experience {
+
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .experienceMaylor,
+    .experienceVente,
+    .experienceCaf {
+
+        flex-direction: column;
+    }
+
+    .experienceCaf .content-right-experience:nth-child(1) {
+        display: inline;
+
+    }
+
+    .experienceCaf .content-right-experience:nth-child(3) {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+    /* Styles pour cette Media Queries */
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    p,
+    span,
+    li {
+        font-size: 1.6rem;
+    }
+
+    #content-list {
+        justify-content: space-around;
+    }
+
+    #image-content img {
+        width: 60%;
+        margin: auto;
+        border-right: solid white 3px;
+    }
+
+    #contact {
+        padding: 3%;
+        margin-top: 0;
+    }
+
+    #reseaux-header-content {
+
+        padding: 0;
+    }
+
+    .webside {
+        opacity: 1;
+    }
+    .webside img,
+    .webside a {
+
+        width: 70%;
+
+    }
+
+    .liste-stage li {
+
+        font-size: 1.6rem;
+
+    }
+
+    .content-right-experience ul {
+
+
+        width: 100%;
+
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles pour cette Media Queries */
+    
+
+    p,span {
+        font-size: 1.6rem;
+    }
+    li {
+        font-size: 1.3rem;
+    }
+
+    .content-right-experience li {
+       font-size: 1.6rem;
+    }
+    #content-list {
+        justify-content: space-around;
+    }
+
+    .webside {
+        opacity: 1;
+    }
+    }
+
+@media screen and (min-width: 1440px) {
+
+    h1,
+    h2 {
+        padding: 1%;
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    li,
+    span {
+        font-size: 2.5rem;
+
+    }
+
+    p,
+    .liste-stage li {
+        font-size: 3rem;
+    }
+
+    #name-header-content {
+
+        padding: 1%;
+    }
+
+    #dev-header-content {
+
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+
+    #content-list {
+
+        justify-content: space-around;
+        padding: 5%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+
+    }
+
+    .webside img,
+    .webside a {
+        margin: auto;
+        width: 80%;
+        height: 330px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+}

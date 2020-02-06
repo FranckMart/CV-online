@@ -1,0 +1,9 @@
+User-agent : *
+Allow : ../HTML/site_photo.html
+Allow : ../HTML/shooting.html
+Allow : ../HTML/store.html
+Allow : ../HTML/page_portrait.html
+Allow : ../HTML/page_paysage.html
+Allow : ../HTML/page_animalier.html
+Allow : ../HTML/histoire.html
+Allow : ../HTML/contact.html

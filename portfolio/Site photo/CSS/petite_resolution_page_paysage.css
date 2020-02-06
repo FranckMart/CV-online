@@ -1,0 +1,107 @@
+
+body{
+    background-color: rgb(236, 233, 233);
+
+}
+
+.titrephotographe {
+   font-size: 12px;
+
+}
+
+#titre h3 {
+    
+    font-size: 15px;
+   
+}
+
+#contenu_photo{
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+    height: 900px;
+    min-height: 100%;
+    padding-bottom: 130px;
+   
+}
+#contenu_gauche{
+    flex-direction: column;
+}
+#contenu_droite{
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
+}
+.panier img{
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+}
+
+
+#titre h3:hover {
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(167, 164, 164);
+    opacity: 0.5;
+}
+
+
+#contenu_droite {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+#contenu_photo{
+    margin-top: 40px;
+    display: flex;
+    padding-top: 100px;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#contenu_photo img{
+    height: auto;
+    width: 100%;
+}
+footer {
+    margin-top: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+#reseaux {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.facebook {
+    width: 40px;
+    height: 40px;
+
+}
+
+.instagram {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.flickr {
+    width: 40px;
+    height: 40px;
+
+}

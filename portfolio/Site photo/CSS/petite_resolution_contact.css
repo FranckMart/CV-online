@@ -1,0 +1,166 @@
+body{
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+#bloc_page {
+    width: auto;
+    height: 100%;
+}
+
+
+
+#titre {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+    height: 70px;
+    font-size: 10px;
+    
+}
+
+.titrephotographe {
+    font-family: 'yellowtailregular', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#titre h3 a{
+    color:black;
+    font-size: 15px;
+}
+#titre h3:hover {
+    font-style: italic;
+    color: rgb(167, 164, 164);
+    opacity: 0.5;
+}
+
+#contenu_centre{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.panier{
+    width: 45px;
+    height: 35px;
+}
+.panier img{
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+}
+#contenu_droite{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+#content_contact{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 100%;
+    height: auto;
+    
+}
+
+
+label,
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+#text{
+    width: 100%;
+}
+#courriel{
+    font-size: .8rem;
+    letter-spacing: 1px;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+.bloc_saisie{
+    height: 400px;
+    width: 60%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+}
+
+.bloc_saisie p{
+    color: rgb(141, 138, 138);
+}
+.bloc_text{
+    height: 400px;
+    width: 60%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+footer{
+    margin-top: 60px;
+    position: relative; 
+    bottom:0;  /* on le colle en bas */ 
+    width:100%; 
+    height:60px;   /* Hauteur du pied de page */ 
+}
+
+#reseaux{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.facebook{
+    width: 40px;
+    height: 40px;
+}
+
+.instagram{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.flickr{
+    width: 40px;
+    height: 40px;
+}

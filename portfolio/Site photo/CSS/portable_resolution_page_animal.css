@@ -1,0 +1,12 @@
+
+#contenu_photo {
+   
+    margin-top: 40px;
+    display: flex;
+}
+
+#contenu_photo img {
+    height: auto;
+    width: 80%;
+}
+

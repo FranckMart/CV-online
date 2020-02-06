@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(236, 233, 233);
+
+}
+
+.titrephotographe {
+   font-size: 12px;
+
+}
+
+#titre h3 {
+    
+    font-size: 15px;
+   
+}
+
+#contenu_photo{
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+    height: 900px;
+    min-height: 100%;
+    padding-bottom: 130px;
+   
+}
+#contenu_gauche{
+    flex-direction: column;
+}
+#contenu_droite{
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
+}
+.panier img{
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+}
+.photo_animalier img {
+    height: 250px;
+    width: 450px;
+
+}
+
+.photo_animalier:hover {
+    opacity: 0.3;
+}
+
+.photo_animalier {
+    height: 250px;
+    width: 450px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    align-self: center;
+
+}
+
+.photo_portrait img {
+    height: 250px;
+    width: 450px;
+
+}
+
+
+.photo_portrait:hover {
+    opacity: 0.3;
+}
+
+.photo_paysage img {
+    height: 250px;
+    width: 450px;
+
+}
+
+
+.photo_paysage:hover {
+    opacity: 0.3;
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    
+}

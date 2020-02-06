@@ -1,0 +1,326 @@
+@font-face {
+    font-family: "Playfair";
+    src: url("../fonts/PlayfairDisplaySC-Italic.otf") format("woff2"), url("../fonts/PlayfairDisplaySC-Italic.otf") format("woff");
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg) no-repeat center center fixed; /* Photo by Ales Nesetril on Unsplash*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 62.5%;
+}
+
+div,
+h1,
+h2,
+h3 {
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 3px 2px 3px black;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.titleCanvasContent {
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.titleCanvasContent h3 {
+    width: 100%;
+    padding: 10px;
+    margin: auto 0;
+}
+
+.titleCanvasContent a {
+    position: absolute;
+    left: 0.5%;
+    width: 2%;
+    padding: 10px;
+}
+
+.titleCanvasContent img {
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(231, 171, 40);
+    text-shadow: 0.5px 0.1px rgb(224, 222, 222), 0 0 0em wheat, 0 0 0em wheat;
+    font-family: "Playfair";
+}
+#pop-up-img-content {
+    width: 100%;
+    height: 100%
+}
+.pop-up-content-wrap-title {
+    margin-bottom: 2%;
+}
+
+  .custom-model-main {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /* z-index: 1050; */
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear, z-index 0.15;
+    -o-transition: opacity 0.15s linear, z-index 0.15;
+    transition: opacity 0.15s linear, z-index 0.15;
+    z-index: -1;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .custom-model-main:before {
+    content: "";
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+    margin-right: -0px;
+    height: 100%;
+  }
+  .model-open {
+    z-index: 99999;
+    opacity: 1;
+    overflow: hidden;
+  }
+  .custom-model-inner {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    display: inline-block;
+    vertical-align: middle;
+    width: 600px;
+    margin: 30px auto;
+  }
+  .custom-model-wrap {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: rgb(129, 129, 129);
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: 0;
+    text-align: left;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .model-open .custom-model-inner {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    position: relative;
+    z-index: 999;
+  }
+  .model-open .bg-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+  }
+  .bg-overlay {
+    background: rgba(0, 0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-transition: background 0.15s linear;
+    -o-transition: background 0.15s linear;
+    transition: background 0.15s linear;
+  }
+  .close-btn {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+#CanvasContent {
+    display: flex;
+    width: 100%;
+}
+
+#canvas {
+    width: 100%;
+    display: flex;
+}
+
+#myCanvasJS{
+    display: block;
+    margin: auto;
+}
+
+#certificationContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.certif-img {
+    margin-top: 4%;
+    margin-bottom: 10%;
+    width: 40%;
+}
+
+.certif-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#websideContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    padding: 10px;
+    width: 100%;
+    height: 70%;
+}
+
+.webside {
+    width: 33%;
+    height: 50%;
+    margin: 2px;
+    border-radius: 10px;
+    background-color: blue;
+    border: solid 1px seagreen;
+    transition: 1s;
+}
+
+.webside:hover {
+    opacity: 1;
+    transform: scale(0.9) rotate(5deg);
+}
+
+.webside:nth-child(3),
+.webside:nth-child(6) {
+    animation: slideRight 3s;
+}
+
+.webside:nth-child(3):hover,
+.webside:nth-child(6):hover {
+    transform: scale(0.9) rotate(-5deg);
+}
+
+.webside:nth-child(1),
+.webside:nth-child(4) {
+    animation: slideLeft 3s;
+}
+
+.webside:nth-child(2),
+.webside:nth-child(5) {
+    animation: slideBottom 3s;
+}
+
+.webside:nth-child(2):hover,
+.webside:nth-child(5):hover {
+    transform: rotate(1turn);
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    from {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 240px) and (max-width: 900px) {
+    .webside {
+        width: 100%;
+        height: 30%;
+    }
+
+    .titleCanvasContent a {
+
+        width: 7%;
+
+    }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles pour cette Media Queries */
+
+    .titleCanvasContent a {
+
+        width: 5%;
+
+    }
+
+    .webside {
+        width: 100%;
+    }
+
+  
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+    h3 {
+        font-size: 3.5rem;
+    }
+    
+}

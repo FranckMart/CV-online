@@ -1,0 +1,166 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+}
+
+div {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 2rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    font-size: 2.95rem;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.89rem;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: rgb(37, 94, 37);
+    display: flex;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#header-content-left {
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#nav-element {
+    padding: 35px;
+}
+
+.nav-element img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+#content-middle, #content-left, #content-right, .works, .options, .started, .github {
+    height: auto;
+    border: solid white 2px;
+}
+
+#content-middle {
+    display: flex;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#content-left {
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: rgb(51, 60, 139);
+}
+
+#imgs-content-layout {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 11px;
+    text-align: center;
+    padding-left: 0;
+}
+
+#content-right {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works, .option {
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 50%;
+    background-color: green;
+}
+
+.option {
+    background-color: rgb(224, 183, 0);
+}
+
+.started {
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 80%;
+    background-color: rgb(77, 165, 42);
+}
+
+.github {
+    width: 20%;
+    background-color: rgb(117, 33, 33);
+}
+
+.github img {
+    width: 100%;
+}
+
+.img-content {
+    width: 25%;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1024px) {
+    /* Styles pour cette Media Queries */
+    #content-middle {
+        flex-direction: column;
+    }
+    header, #content-left, #content-right, .works, .option, .started {
+        width: 100%;
+        height: auto;
+    }
+    .img-content img {
+        width: 85%;
+    }
+    .github {
+        width: 30%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Styles pour cette Media Queries */
+    #content-middle {
+        flex-direction: row;
+    }
+    .img-content img {
+        width: 90%;
+    }
+    .started {
+        padding-top: 0;
+        width: 70%;
+        height: auto;
+    }
+    .github {
+        height: auto;
+        margin: 0;
+    }
+}
