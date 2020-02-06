@@ -552,7 +552,7 @@ header {
     }
 
     #image-content img {
-        width: 100%;
+        width: 60%;
         margin: auto;
         border-right: solid white 3px;
     }
