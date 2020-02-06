@@ -546,6 +546,9 @@ header {
     li {
         font-size: 1.6rem;
     }
+    #content-me {
+        flex-direction: column;
+    }
 
     #content-list {
         justify-content: space-around;
