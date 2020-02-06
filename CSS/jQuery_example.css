@@ -246,10 +246,7 @@ h3 {
     animation: slideBottom 3s;
 }
 
-.webside:nth-child(2):hover,
-.webside:nth-child(5):hover {
-    transform: rotate(1turn);
-}
+
 
 @keyframes slideLeft {
     from {
