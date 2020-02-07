@@ -189,6 +189,10 @@ h3 {
         width: 7%;
 
     }
+
+    #canvas {
+        flex-direction: column;
+    }
 }
 
 
@@ -213,6 +217,10 @@ h3 {
 
     h3 {
         font-size: 3.5rem;
+    }
+
+    #canvas {
+        flex-direction: row;
     }
     
 }
