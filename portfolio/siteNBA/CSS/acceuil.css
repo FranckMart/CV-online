@@ -1,0 +1,284 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+    /*
+    background: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg) no-repeat center center fixed; /* Photo by Ales Nesetril on Unsplash
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    */
+}
+
+div {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2,
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* class Boostrap */
+
+.mt-1 {
+    margin-top: 5% !important;
+    margin: auto;
+}
+
+.list-group-item-action {
+    width: 100%;
+    color: #495057;
+    text-align: inherit;
+    height: 100%;
+}
+
+.list-group {
+    width: 100%;
+    height: 100%;
+}
+
+.list-group-item.active {
+    background-color:
+        #8b00ff;
+    border-color:
+        black;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 2.25rem;
+}
+
+.progress-bar {
+    font-size: 13px;
+    background-color: rgb(211, 27, 27);
+}
+/* */
+.navigation_header {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8b00ff;
+}
+
+.nav_categorie {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav_categorie a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.nav_categorie li {
+    list-style: none;
+}
+
+.first_title {
+    color: white;
+    text-align: center;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.center_content {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.second_title {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.img_hero,
+.summer_league {
+    padding: 30px;
+    width: 60%;
+    text-align: center;
+
+}
+
+
+
+.img_hero p {
+    text-align: center;
+}
+
+.nav_news {
+
+    display: flex;
+    float: right;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 25%;
+    height: 600px;
+    border-radius: 40px;
+    background-color: rgb(221, 216, 216);
+
+}
+
+.news_nba {
+
+
+    margin: auto;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.news_nba h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.nav_news a {
+    text-decoration: none;
+
+}
+
+.nav_news ul {
+    margin: auto;
+    text-align: center;
+    margin-right: 7%;
+}
+
+.nav_news li {
+
+    list-style: none;
+    padding: 4%;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.nav_news a:hover {
+    text-decoration: underline;
+}
+
+.news_nba a {
+    color: brown;
+}
+
+.img_hero img,
+.summer_league img {
+    width: 80%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    .nav_categorie {
+        width: 60%;
+
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .second_title {
+        margin-bottom: 0px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .nav_categorie {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #8b00ff;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 3;
+    }
+
+    .nav_categorie li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
