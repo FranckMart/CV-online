@@ -138,7 +138,9 @@ h3 {
     opacity: 1;
     transform: scale(0.9) rotate(5deg);
 }
-
+.webside h3 {
+   padding: 5%;
+}
 .webside:nth-child(3),
 .webside:nth-child(6) {
     animation: slideRight 3s;
