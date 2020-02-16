@@ -43,6 +43,7 @@ p {
     justify-content: space-around;
     align-items: center;
     background-color: #8017c8;
+    padding: 0.5%;
 }
 
 .nav_categorie {
@@ -134,8 +135,13 @@ p {
     margin-top: 10%;
 }
 
-.col-sm-3 {
+.col-sm-4{
     padding: 2%;
+}
+
+.btn-primary {
+    background-color: #8017c8;
+    border-color: black;
 }
 
 /* */
@@ -199,10 +205,12 @@ p {
 
 footer {
     text-align: center;
-    background-color: #8017c8;
+}
+#reseaux_sociaux {
+    padding: 0.5%;
 }
 
-#reseaux_sociaux a{
+#reseaux_sociaux a {
     padding-left: 5%;
     padding-right: 5%;
 }
