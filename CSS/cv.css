@@ -238,7 +238,7 @@ header {
 }
 
 .formation_dev_web,
-.experienceSwinty,
+.experienceSwinty_laptop,
 .experienceMaylor,
 .experienceVente,
 .experienceCaf {
@@ -257,7 +257,7 @@ header {
 .content-img-experience img {
     border-radius: 30px;
     width: 100%;
-    height: 350px;
+    height: 100%;
 
 }
 
@@ -267,7 +267,7 @@ header {
 }
 
 .content-img-ics img {
-    height: 200px;
+    height: 100%;
 }
 
 .content-right-experience {
@@ -481,6 +481,10 @@ padding: 5%;
     /* Safari 和 Chrome */
 }
 
+.experienceSwinty_mobile{
+    display: none;
+}
+
 
 /* ----------- Retina Screens ----------- */
 @media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
@@ -495,9 +499,13 @@ padding: 5%;
         padding-top: 5%;
         height: auto;
     }
+
+    .experienceSwinty_mobile{
+        display: none;
+    }
 }
 
-@media screen and (min-width: 240px) and (max-width: 900px) {
+@media screen and (max-width: 680px) {
 
     h1,
     h2 {
@@ -598,12 +606,13 @@ padding: 5%;
         height: 215px;
 
     }
-
+    
     .content-img-experience {
-        width: 50%;
+        width: 100%;
         padding: 5px;
         height: 60%;
         margin-top: 2.5%;
+        margin: auto;
     }
 
     #contact {
@@ -613,24 +622,28 @@ padding: 5%;
         border-bottom: none;
     }
 
-    .content-img-experience {
-        width: 70%;
-        margin: auto;
-    }
-
     .content-right-experience {
 
+        width: 100%;
         margin-top: 5%;
         margin-bottom: 5%;
     }
 
-    .experienceMaylor,
-    .experienceVente,
-    .experienceCaf {
+    .formation_dev_web, .experienceSwinty, .experienceMaylor, .experienceVente, .experienceCaf {
 
         flex-direction: column;
     }
+    .experienceSwinty_laptop{
+        display: none;
+    }
 
+    .experienceSwinty_mobile {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        padding: 5%;
+        flex-direction: column;
+    }
     .experienceCaf .content-right-experience:nth-child(1) {
         display: inline;
 
@@ -700,12 +713,38 @@ padding: 5%;
         font-size: 1.6rem;
 
     }
+    .content-right-experience{
+        width: 100%;
+    }
+    .content-img-experience {
+        width: 70%;
+        padding: 10%;
+        height: 60%;
+        margin-top: 2.5%;
+        margin: auto;
+    }
 
     .content-right-experience ul {
 
 
         width: 100%;
 
+    }
+
+    .formation_dev_web, .experienceSwinty, .experienceMaylor, .experienceVente, .experienceCaf {
+
+        flex-direction: column;
+    }
+    .experienceSwinty_laptop{
+        display: none;
+    }
+
+    .experienceSwinty_mobile {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        padding: 5%;
+        flex-direction: column;
     }
 }
 
@@ -732,6 +771,12 @@ padding: 5%;
 
     .webside {
         opacity: 1;
+    }
+    .experienceSwinty_laptop{
+       display: flex;
+    }
+    .experienceSwinty_mobile {
+       display: none;
     }
 }
 
@@ -790,5 +835,11 @@ padding: 5%;
         height: 330px;
         text-decoration: none;
         border-radius: 10px;
+    }
+    .experienceSwinty_laptop{
+        width: 100%;
+    }
+    .experienceSwinty_mobile{
+        display: none;
     }
 }
