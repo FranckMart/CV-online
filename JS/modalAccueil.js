@@ -24,7 +24,6 @@ $(".webside").on("mouseout", function () {
   //$titleWebside.css("display", "inline")
   blocAppend.style.display = "none";
 
-
 });
 /*
 <div id="parentElement">

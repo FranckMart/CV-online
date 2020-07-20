@@ -14,14 +14,6 @@ html {
     font-size: 62.5%;
 }
 
-div,
-h1,
-h2,
-h3 {
-    box-sizing: border-box;
-    color: white;
-    text-shadow: 3px 2px 3px black;
-}
 
 body {
     width: 100%;
@@ -61,7 +53,6 @@ h3 {
     text-align: center;
     color: rgb(231, 171, 40);
     text-shadow: 0.5px 0.1px rgb(224, 222, 222), 0 0 0em wheat, 0 0 0em wheat;
-    font-family: "Playfair";
 }
 #pop-up-img-content {
     width: 100%;
