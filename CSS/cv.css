@@ -387,7 +387,6 @@ padding: 5%;
     fill: transparent;
     stroke-width: 3px;
     animation: bounce 2s infinite, arrow 2s infinite;
-    ;
     -webkit-animation: bounce arrow 2s infinite;
 }
 
