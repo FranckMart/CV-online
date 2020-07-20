@@ -548,6 +548,7 @@ padding: 5%;
         flex-direction: column;
     }
 
+
     #image-content {
 
         margin: auto;
@@ -669,6 +670,51 @@ padding: 5%;
     span,
     li {
         font-size: 1.6rem;
+    }
+    #content-me {
+        flex-direction: column;
+    } #image-content {
+
+        margin: auto;
+        display: flex;
+
+    }
+
+    #image-content img {
+        width: 70%;
+        margin: auto;
+        border-right: solid white 3px;
+    }
+
+    #content-right,
+    #content-left {
+        width: 100%;
+    }
+
+    #contact {
+        border-left: none;
+
+    }
+
+    #content-list {
+        flex-wrap: nowrap;
+        padding-top: 5%;
+    }
+
+    #maFormation-présentation {
+        padding: 3%;
+    }
+
+    #reseaux-header-content {
+
+        padding: 5%;
+    }
+
+    #reseaux-header-content img,
+    #reseaux-header-content a {
+        width: 23px;
+        height: 23px;
+        padding: 1%;
     }
 
     #content-list {
