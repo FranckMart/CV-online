@@ -294,6 +294,8 @@ header {
 .liste-stage h3{
 padding: 5%;
 }
+
+
 @keyframes slideLeft {
     from {
         transform: translateX(-400px);
@@ -628,6 +630,10 @@ padding: 5%;
         width: 100%;
         margin-top: 5%;
         margin-bottom: 5%;
+    }
+    .content-right-experience ul {
+      
+        padding-left: 0;
     }
 
     .formation_dev_web, .experienceSwinty, .experienceMaylor, .experienceVente, .experienceCaf {
