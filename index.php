@@ -84,9 +84,9 @@
         </div>
     </section>
     <div id="show_more">
-        <h3>Voir mes expériences professionels</h3>
+        <h3>Voir mon portfolio</h3>
         <div class="arrow_content">
-            <a href="#experience">
+            <a href="#portfolio">
                 <svg class="arrows">
                     <path class="a1" d="M0 0 L30 32 L60 0"></path>
                 </svg>
@@ -129,6 +129,16 @@
             </div>
         </div>
     </section>
+    <div id="show_more">
+        <h3>Voir mes expériences professionnel</h3>
+        <div class="arrow_content">
+            <a href="#experience">
+                <svg class="arrows">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
     <section id="experience">
         <div class="title-experience">
             <h3>Experiences</h3>
