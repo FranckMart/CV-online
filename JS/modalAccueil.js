@@ -1,3 +1,7 @@
+$('#exampleModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+/*
 var blocAppend = document.createElement("div");
 blocAppend.id = "websideInfo";
 blocAppend.style.width = "100%";
@@ -25,6 +29,7 @@ $(".webside").on("mouseout", function () {
   blocAppend.style.display = "none";
 
 });
+*/
 /*
 <div id="parentElement">
    <span id="childElement">foo bar</span>
