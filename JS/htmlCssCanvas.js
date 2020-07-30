@@ -22,6 +22,8 @@ var quart = Math.PI / 2;
 
 for (var i = 0; i < canvas.length; i++) {
   console.log(canvas[i]);
+
+  // variable de chaque cercle de compétences 
   var htmlProgress = canvas[0].getContext('2d');
   var cssProgress = canvas[1].getContext("2d");
   var jsProgress = canvas[2].getContext("2d");
