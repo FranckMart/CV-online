@@ -742,6 +742,18 @@ padding: 5%;
     .experienceCaf .content-right-experience:nth-child(3) {
         display: none;
     }
+    #competences_progress {
+        width: 100%;
+    }
+    .competences_progress_front, .competences_progress_back, .competences_progress_cms {
+        width: 100%;
+       
+    }
+
+    #canvasFront, #canvasBack, #canvasCms {
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
@@ -881,6 +893,19 @@ padding: 5%;
         padding: 5%;
         flex-direction: column;
     }
+
+    #competences_progress {
+        width: 100%;
+    }
+    .competences_progress_front, .competences_progress_back, .competences_progress_cms {
+        width: 100%;
+       
+    }
+
+    #canvasFront, #canvasBack, #canvasCms {
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
@@ -912,6 +937,18 @@ padding: 5%;
     }
     .experienceSwinty_mobile {
        display: none;
+    }
+    #competences_progress {
+        width: 100%;
+    }
+    .competences_progress_front, .competences_progress_back, .competences_progress_cms {
+        width: 100%;
+       
+    }
+
+    #canvasFront, #canvasBack, #canvasCms {
+        width: 100%;
+        flex-wrap: wrap;
     }
 }
 
