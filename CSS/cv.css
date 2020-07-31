@@ -757,7 +757,7 @@ padding: 5%;
 }
 
 /* Smartphones, small screens (landscape) ----------- */
-@media only screen and (min-width : 321px) {
+@media only screen and (min-width : 321px) and (max-width: 740px) {
     /* Styles */
     #competences_progress {
         width: 100%;
