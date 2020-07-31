@@ -56,9 +56,16 @@
      font-family: 'Roboto Light', 'sans-serif';
  }
 
+ h5 {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto Light', 'sans-serif';
+}
+
  p,
  li,
- span {
+ span,a {
      font-size: 1.5rem;
      margin: auto 0;
      color: rgb(228, 227, 226);
@@ -67,6 +74,22 @@
      font-weight: bold;
  }
 
- button{
-     font-size: 1.5rem;
+ a:hover{
+    color: #e7ab28;
+    text-decoration: none;
  }
+
+ .btn > p{
+     text-shadow: none;
+     font-weight: normal;
+ }
+
+ .modal-body p {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    text-shadow: none;
+     font-weight: bold;
+     color: black;
+}
