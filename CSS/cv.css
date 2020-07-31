@@ -756,6 +756,23 @@ padding: 5%;
     }
 }
 
+/* Smartphones, small screens (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    /* Styles */
+    #competences_progress {
+        width: 100%;
+    }
+    .competences_progress_front, .competences_progress_back, .competences_progress_cms {
+        width: 100%;
+       
+    }
+
+    #canvasFront, #canvasBack, #canvasCms {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    }
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 
     /* Styles pour cette Media Queries */
