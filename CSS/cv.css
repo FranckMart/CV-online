@@ -577,14 +577,17 @@ padding: 5%;
         height: 55%;
     }
 
-    #content-list {
-        animation: slideRight 5s;
-        display: flex;
-        flex-wrap: nowrap;
-        padding-top: 5%;
-        height: auto;
-    }
+   
+#content-list {
 
+    animation: slideRight 5s;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 5%;
+    height: auto;
+    margin-bottom: 5%;
+
+}
     .experienceSwinty_mobile{
         display: none;
     }
