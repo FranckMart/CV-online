@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Playfair";
+    src: url("../fonts/PlayfairDisplaySC-Italic.otf") format("woff2"), url("../fonts/PlayfairDisplaySC-Italic.otf") format("woff");
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg) no-repeat center center fixed; /* Photo by Ales Nesetril on Unsplash*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.titleCanvasContent {
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.titleCanvasContent h3 {
+    width: 100%;
+    padding: 10px;
+    margin: auto 0;
+}
+
+.titleCanvasContent a {
+    position: absolute;
+    left: 0.5%;
+    width: 2%;
+    padding: 10px;
+}
+
+.titleCanvasContent img {
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(231, 171, 40);
+}
+
+#CanvasContent {
+    display: flex;
+    width: 100%;
+}
+
+#canvas {
+    width: 100%;
+    display: flex;
+}
+
+.myCanvas {
+    display: block;
+    margin: auto;
+}
+
+#certificationContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.certif-img {
+    margin-top: 4%;
+    margin-bottom: 10%;
+    width: 40%;
+}
+
+.certif-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#websideContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    padding: 10px;
+    width: 100%;
+    height: 70%;
+}
+
+.webside {
+    width: 33%;
+    height: 50%;
+    transition: 1s;
+    margin: auto;
+    margin-top: 2%;
+
+}
+
+.websideTitle{
+    width: 100%;
+    height:100%;
+    text-align: center;
+    margin: auto;
+}
+
+.websideTitle a{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-decoration: none;
+    font-size: 2rem;
+    color: brown;
+}
+
+.websideTitle img{
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+.webside h3 {
+   padding: 5%;
+}
+
+
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    from {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 240px) and (max-width: 900px) {
+    .webside {
+       
+        width: 70%;
+        height: 30%;
+        margin-top: 2%;
+    }
+
+    .titleCanvasContent a {
+
+        width: 7%;
+
+    }
+
+    #canvas {
+        flex-direction: column;
+    }
+
+    
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles pour cette Media Queries */
+
+    .titleCanvasContent a {
+
+        width: 5%;
+
+    }
+
+    .webside {
+        width: 50%;
+        margin: auto;
+    }
+
+  
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    #canvas {
+        flex-direction: row;
+    }
+    
+}

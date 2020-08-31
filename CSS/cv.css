@@ -300,6 +300,20 @@ header {
 padding: 5%;
 }
 
+.lien_portfolio {
+    display: block;
+    width: 45%;
+    margin: auto;
+    height: 40px;
+    background-color: #08c3d7;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+}
+.lien_portfolio a{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 @keyframes slideLeft {
     from {
